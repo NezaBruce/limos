@@ -1,5 +1,6 @@
 import './App.scss';
-import Home from './components/Home';
+// import Home from './components/Home';
+import Calculator from './components/Calculator/Calculator'
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,7 +12,8 @@ function App() {
     <Router>
     <div>
       <Routes>
-        <Route path="/" element={<Home/>}/>        
+        <Route path='/' element={<Calculator/>}/>
+        {/* <Route path="/" element={<Home/>}/>         */}
         <Route path="/bookit" element={<Bookit/>}/>        
       </Routes>
     </div>
